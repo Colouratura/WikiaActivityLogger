@@ -7,8 +7,8 @@
 /**
  * Importing modules
  */
-const Logger = require('./main.js'),
-      Controller = require('./controllers/cli/index.js');
+const Logger     = require( './main.js' ),
+      Controller = require( './controllers/cli/index.js' );
 
 /**
  * Bot controller
@@ -16,7 +16,7 @@ const Logger = require('./main.js'),
  * @global
  * @type {Controller}
  */
-global.main = new Controller(new Logger());
+global.main = new Controller( new Logger() );
 
 // START!!!
 global.main.initialize();
